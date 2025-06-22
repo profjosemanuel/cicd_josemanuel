@@ -181,6 +181,7 @@ jobs:
             --region ${PROD_REGION} \
             --no-fail-on-empty-changeset \
             --parameter-overrides "LabRoleArn=${LAB_ROLE_ARN}"
+             --resolve-s3
 
       - name: Borrar infraestructura de test
         run: |
